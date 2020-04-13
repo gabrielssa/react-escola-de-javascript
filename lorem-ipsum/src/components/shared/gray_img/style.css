@@ -1,0 +1,4 @@
+.gray-image{
+    width: 350px;
+    filter: grayscale(100%);
+}
