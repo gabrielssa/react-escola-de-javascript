@@ -1,4 +1,9 @@
-.gray-image{
-    width: 350px;
+.gray-img{
+    width: 355px;
     filter: grayscale(100%);
+    display: block;
+}
+
+.color-img{
+    width: 355px;
 }

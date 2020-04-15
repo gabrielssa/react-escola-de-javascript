@@ -1,18 +1,26 @@
 import React, {Fragment} from 'react';
 import Planet from './planet';
 
+const clickOnPlanet = (name) => {
+    console.log(`Um clique no planeta: ${name}`);
+}
+
 const Planets = () => {
     return (
         <Fragment>
             <h3>Planet List</h3>
             <Planet name="Mercúrio"
-                    description="Mercury is the smallest and innermost planet in the Solar System. Its orbit around the Sun takes 87.97 days, the shortest of all the planets in the Solar System. It is named after the Roman deity Mercury, the messenger of the gods."
                     img_url="https://s2.glbimg.com/p6TZE5PneQrqLvhM1CYiPD_WtbE=/0x0:600x400/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2018/s/W/x0TdoTSdi4acq8NWejug/mercurio.jpg"
+                    texto="Mercúrio é o menor[nota 1][nota 2] e mais interno planeta do Sistema Solar, orbitando o Sol a cada 87,969 dias terrestres. A sua órbita tem a maior excentricidade e o seu eixo apresenta a menor inclinação em relação ao plano da órbita dentre todos os planetas do Sistema Solar. Mercúrio completa três rotações em torno de seu eixo a cada duas órbitas."
+                    link="https://pt.wikipedia.org/wiki/Merc%C3%BArio_(planeta)"
+                    title_with_underline={true}
+                    gray={true}
             />
 
-            <Planet name="Plutão"
-                    description="Plutão, formalmente designado 134340 Plutão, é um planeta anão do Sistema Solar e o nono maior e décimo mais massivo objeto observado diretamente orbitando o Sol. Originalmente classificado como um planeta, Plutão é atualmente o maior membro conhecido do cinturão de Kuiper,[11] uma região de corpos além da órbita de Netuno. "
-                    img_url="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pluto_in_True_Color_-_High-Res.jpg/280px-Pluto_in_True_Color_-_High-Res.jpg"
+            <Planet name="Júpiter"
+                    img_url="https://s2.glbimg.com/p6TZE5PneQrqLvhM1CYiPD_WtbE=/0x0:600x400/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2018/s/W/x0TdoTSdi4acq8NWejug/mercurio.jpg"
+                    texto="Júpiter é  o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa, e é o quinto mais próximo do Sol.[11] Possui menos de um milésimo da massa solar, contudo tem 2,5 vezes a massa de todos os outros planetas em conjunto. É um planeta gasoso, junto com Saturno, Urano e Netuno."
+                    
             />
                 
         </Fragment>
